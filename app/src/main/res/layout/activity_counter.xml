@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/sore"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--Team A-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_score_a"
+                android:textSize="80sp"
+                android:text="0"/>
+            <Button
+                android:background="@color/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3_a"
+                android:layout_margin="9dp"
+                android:text="+3 POINTS"/>
+            <Button
+                android:background="@color/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2_a"
+                android:layout_margin="9dp"
+                android:text="+2 POINTS"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:background="@color/colorButton"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1_a"
+                android:layout_margin="9dp"
+                android:text="+1 POINTS"/>
+        </LinearLayout>
+<!--Team B-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_score_b"
+                android:textSize="80sp"
+                android:text="0"/>
+            <Button
+                android:layout_margin="9dp"
+                android:background="@color/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_3_b"
+                android:text="+3 POINTS"/>
+            <Button
+                android:layout_margin="9dp"
+                android:background="@color/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_2_b"
+                android:text="+2 POINTS"/>
+            <Button
+                android:layout_margin="9dp"
+                android:background="@color/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_1_b"
+                android:text="+1 POINTS"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:background="@color/colorReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_reset"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
